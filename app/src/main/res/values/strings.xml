@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Shopping List</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="shopping_lists_fragment_label">Shopping Lists Fragment</string>
+    <string name="shopping_list_detail_fragment_label">Shopping List Detail Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+</resources>
