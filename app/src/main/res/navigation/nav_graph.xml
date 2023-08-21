@@ -8,16 +8,23 @@
     <fragment
         android:id="@+id/ShoppingListsFragment"
         android:name="com.example.shoppinglist.view.ShoppingListsFragment"
-        android:label="@string/shopping_lists_fragment_label"
         tools:layout="@layout/fragment_shopping_lists">
 
         <action
-            android:id="@+id/action_SHoppingListDetailFragment_to_ShoppingListDetailFragment"
-            app:destination="@id/ShoppingListDetailFragment" />
+            android:id="@+id/action_ShoppingListsFragment_to_ShoppingListDetailFragment"
+            app:destination="@id/ShoppingListDetailFragment"
+            app:enterAnim="@anim/animation_slide_in_left"
+            app:exitAnim="@anim/animation_none"
+            app:popEnterAnim="@anim/animation_none"
+            app:popExitAnim="@anim/animation_slide_out_left" />
     </fragment>
     <fragment
         android:id="@+id/ShoppingListDetailFragment"
         android:name="com.example.shoppinglist.view.ShoppingListDetailFragment"
-        android:label="@string/shopping_list_detail_fragment_label"
-        tools:layout="@layout/fragment_shopping_list_detail"/>
+        tools:layout="@layout/fragment_shopping_list_detail">
+        <argument
+            android:name="shoppingList"
+            app:argType="com.example.shoppinglist.model.ShoppingList"
+            app:nullable="true" />
+    </fragment>
 </navigation>
