@@ -4,4 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.shoppinglist.view.ShoppingListsFragment" />
+    tools:context="com.example.shoppinglist.view.ShoppingListsFragment">
+
+    <GridLayout
+        android:id="@+id/listContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:numColumns="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/addButton"
+            android:layout_height="200dp"
+            android:layout_width="160dp"
+            android:background="@color/card_background"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_add"
+            />
+
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
