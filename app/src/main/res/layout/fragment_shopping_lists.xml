@@ -4,4 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.shoppinglist.view.ShoppingListsFragment" />
+    android:background="@android:color/white"
+    tools:context="com.example.shoppinglist.view.ShoppingListsFragment">
+
+    <GridLayout
+        android:id="@+id/listContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/addButton"
+            android:layout_width="150dp"
+            android:layout_height="243dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/card_background"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_add" />
+
+    </GridLayout>
+
+    <Spinner
+        android:id="@+id/loadingSpinner"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
