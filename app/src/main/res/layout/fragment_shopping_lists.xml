@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context="com.example.shoppinglist.view.ShoppingListsFragment">
 
     <GridLayout
@@ -20,15 +21,24 @@
         <ImageButton
             android:id="@+id/addButton"
             android:layout_height="200dp"
-            android:layout_width="160dp"
+            android:layout_width="150dp"
             android:background="@color/card_background"
             android:layout_columnWeight="1"
-            android:layout_gravity="center"
+            android:layout_gravity="center_horizontal"
             android:scaleType="fitCenter"
             android:src="@drawable/baseline_add"
             />
 
 
     </GridLayout>
+
+    <Spinner
+        android:id="@+id/loadingSpinner"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,10 @@ class ShoppingListDetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         observeViewModel()
-        viewModel.setup()
+        arguments?.let { bundle ->
+            val args = ShoppingListDetailFragmentArgs.fromBundle(bundle)
+            args.shoppingList?.let { viewModel.setup(it) }
+        }
     }
 
     private fun observeViewModel() {

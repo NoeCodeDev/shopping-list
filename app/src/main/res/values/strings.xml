@@ -6,4 +6,5 @@
     <string name="shopping_list_detail_fragment_label">Shopping List Detail Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="error_lists_fetching">There was an error fetching the shopping lists</string>
 </resources>
