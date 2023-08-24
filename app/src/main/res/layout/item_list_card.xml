@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:layout_gravity="http://schemas.android.com/apk/res-auto"
+    android:background="@color/item_background"
+    android:padding="10dp"
+    android:weight="1"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Item's name"
+            android:textSize="25sp"
+            android:layout_marginEnd="20dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleX="2.90"
+            android:scaleY="2.90"
+            android:layout_marginEnd="20dp"/>
+
+        <ImageButton
+            android:id="@+id/removeItem"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/remove_item"
+            android:src="@drawable/baseline_add"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:contentDescription="Remove item"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -16,5 +16,6 @@
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="18sp"
-        tools:text="Sample name" />
+        tools:text="Sample name"
+        android:layout_margin="10dp"/>
 </LinearLayout>

@@ -31,6 +31,15 @@ class ShoppingListDetailFragment : Fragment() {
             val args = ShoppingListDetailFragmentArgs.fromBundle(bundle)
             args.shoppingList?.let { viewModel.setup(it) }
         }
+
+        setListeners()
+    }
+
+    private fun setListeners() {
+        binding.addItemButton.setOnClickListener {
+          //  val action =
+        }
+
     }
 
     private fun observeViewModel() {

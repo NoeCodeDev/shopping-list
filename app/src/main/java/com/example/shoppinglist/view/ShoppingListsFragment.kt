@@ -57,6 +57,7 @@ class ShoppingListsFragment : Fragment() {
     }
 
     private fun renderCards(lists: List<ShoppingList>) {
+
         lists.forEach { shoppingList ->
             val inflater = LayoutInflater.from(context)
             val view = inflater.inflate(R.layout.item_card, null, false)
