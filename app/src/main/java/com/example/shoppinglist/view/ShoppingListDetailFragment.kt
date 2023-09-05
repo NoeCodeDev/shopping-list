@@ -32,15 +32,9 @@ class ShoppingListDetailFragment : Fragment() {
             args.shoppingList?.let { viewModel.setup(it) }
         }
 
-        setListeners()
     }
 
-    private fun setListeners() {
-        binding.addItemButton.setOnClickListener {
-          //  val action =
-        }
 
-    }
 
     private fun observeViewModel() {
         // TODO place here the viewmodel's observers
