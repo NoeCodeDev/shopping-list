@@ -42,7 +42,7 @@
         android:layout_width="300dp"
         android:layout_height="0dp"
         android:layout_marginStart="10dp"
-        android:hint="add new item"
+        android:hint="@string/hint_add_new_item"
         app:layout_constraintEnd_toStartOf="@id/addItemButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descriptionList" />
@@ -58,6 +58,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/addItemText"
         app:layout_constraintTop_toBottomOf="@id/descriptionList" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addItemText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

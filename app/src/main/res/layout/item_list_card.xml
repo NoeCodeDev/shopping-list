@@ -1,52 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:layout_gravity="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:layout_gravity="http://schemas.android.com/apk/res-auto"
     android:background="@color/item_background"
-    android:padding="10dp"
-    android:layout_weight="1"
-    android:baselineAligned="false">
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:padding="5dp">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/itemName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="8"
+        android:textSize="28sp"
+        tools:text="Item's name" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
         android:layout_weight="1"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:gravity="center"
-        >
+        android:scaleX="2.0"
+        android:scaleY="2.0" />
 
-        <TextView
-            android:id="@+id/itemName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Item's name"
-            android:textSize="28sp"
-            android:layout_marginEnd="20dp"/>
+    <ImageButton
+        android:id="@+id/removeItem"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/remove_item"
+        android:scaleType="center"
+        android:src="@drawable/baseline_remove" />
 
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:scaleX="2.20"
-            android:scaleY="2.20"
-            android:layout_marginEnd="10dp"/>
-
-        <ImageButton
-            android:id="@+id/removeItem"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@color/remove_item"
-            android:src="@drawable/baseline_remove"
-            android:layout_gravity="center_vertical"
-            android:gravity="center"
-            android:scaleType="fitCenter"
-            android:contentDescription="Remove item"
-            />
-
-    </LinearLayout>
 
 </LinearLayout>
 
